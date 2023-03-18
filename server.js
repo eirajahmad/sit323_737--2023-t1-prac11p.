@@ -31,7 +31,12 @@ const subtractNumbers = (number1, number2) => {
     var num2 = parseInt(number2)
     var result = num1-num2;
     return result;
-}    
+}
+app.get("/", (req,res) => {
+    
+    res.send('Hello')
+ })
+ 
 var port= process.env.port||3000;
 app.listen(port,()=>{
     console.log("App listening to https://localhost: "+port)
